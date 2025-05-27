@@ -41,3 +41,27 @@ export interface PostData {
     onSubmit: (post: PostData) => void;
   }
   
+
+
+  export interface UserData {
+    name: string;
+    username: string;
+    email: string;
+    phone: string;
+    website: string;
+    company: {
+      name: string;
+      catchPhrase: string;
+    };
+    address: {
+      street: string;
+      city: string;
+    };
+    id?: number;
+  }
+  
+  export interface UserModalProps {
+    onClose: () => void;
+    onSubmit: (user: UserData) => void;
+  }
+  
